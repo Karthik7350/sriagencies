@@ -1,5 +1,3 @@
-"use client";
-
 export default function ContactForm() {
   return (
     <section className="px-6 py-16">
