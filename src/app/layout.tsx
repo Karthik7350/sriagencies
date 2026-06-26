@@ -13,7 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sri Agenices"
+  title: "Sri Agencies",
+   icons: {
+    icon: "/images/logo.ico",
+    shortcut: "/images/logo.ico",
+    apple: "/images/logo.ico",
+  },
 };
 
 export default function RootLayout({
