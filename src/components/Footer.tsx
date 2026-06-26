@@ -1,5 +1,5 @@
 "use client";
-
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
       <section
@@ -57,9 +57,9 @@ export default function Footer() {
     href="https://www.facebook.com/BehindTalkies"
     target="_blank"
     rel="noopener noreferrer"
-    className="h-9 w-9 flex items-center justify-center rounded-full border border-green-700 hover:bg-green-700 transition"
+    className="h-10 w-10 flex items-center justify-center rounded-full border border-green-600 text-white hover:bg-green-600 hover:scale-110 transition-all duration-300"
   >
-    f
+    <FaFacebookF className="text-lg" />
   </a>
 
   {/* Instagram */}
@@ -67,19 +67,9 @@ export default function Footer() {
     href="https://www.instagram.com/living_plants_24/"
     target="_blank"
     rel="noopener noreferrer"
-    className="h-9 w-9 flex items-center justify-center rounded-full border border-green-700 hover:bg-green-700 transition"
+    className="h-10 w-10 flex items-center justify-center rounded-full border border-green-600 text-white hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:scale-110 transition-all duration-300"
   >
-    in
-  </a>
-
-  {/* X */}
-  <a
-    href="https://x.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="h-9 w-9 flex items-center justify-center rounded-full border border-green-700 hover:bg-green-700 transition"
-  >
-    x
+    <FaInstagram className="text-lg" />
   </a>
 
 </div>

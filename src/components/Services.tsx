@@ -1,6 +1,7 @@
 "use client";
+
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export default function Services() {
   const services = [
@@ -30,8 +31,8 @@ export default function Services() {
     },
   ];
 
-  // Animation settings
-  const container = {
+  // Container animation (stagger children)
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -41,12 +42,19 @@ export default function Services() {
     },
   };
 
-  const item = {
-    hidden: { opacity: 0, y: 40 },
+  // Card animation (each service item)
+  const item: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 30,
+    },
     show: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
     },
   };
 
